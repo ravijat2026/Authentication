@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/api/(.*)", "destination": "https://ecom-backend-cr0v.onrender.com/api/$1" },
+      { "source": "/api/auth/(.*)", "destination": "https://ecom-backend-cr0v.onrender.com/api/auth/$1"},
       { "source": "/(.*)", "destination": "/index.html" }
     ],
     "buildCommand": "npm run build",
