@@ -76,7 +76,7 @@ export const verifyEmail = async(req,res) => {
 
         await sendWelcomeEmail(user.email,user.name);
 
-        res.json(200).json({
+        res.status(200).json({
             success: true,
             message: "Email verified succesfully",
             user: {
